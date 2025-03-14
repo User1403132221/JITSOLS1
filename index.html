@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modern Website</title>
+  <style>
+    
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+      color: #333;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+   
+    nav {
+      background-color: rgba(0, 0, 0, 0.7); 
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      opacity: 0;
+      animation: fadeInNav 1.5s forwards;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    /* Fade In Animation for Navigation */
+    @keyframes fadeInNav {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+   
+    .hero {
+      background-image: url('image1.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+      position: relative;
+      animation: slideInFromTop 1s ease-out forwards;
+    }
+
+   
+    @keyframes slideInFromTop {
+      0% { transform: translateY(-100%); }
+      100% { transform: translateY(0); }
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .hero p {
+      font-size: 24px;
+      margin-bottom: 30px;
+      animation: fadeInUp 1.7s ease-out;
+    }
+
+    .cta-button {
+      padding: 15px 30px;
+      background-color: #f39c12;
+      color: white;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .cta-button:hover {
+      background-color: #e67e22;
+      transform: scale(1.1);
+    }
+
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+
+    .about {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 20px;
+      background-color: #fff;
+      background-image: url('image2.jpg'); 
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      animation: fadeInUp 1.5s ease-out;
+    }
+
+    .about div {
+      flex: 1;
+      margin: 0 20px;
+      background-color: rgba(0, 0, 0, 0.5); 
+      padding: 30px;
+      border-radius: 10px;
+    }
+
+    .about h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .about p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background-color: #fff;
+      padding: 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 50px auto;
+      width: 60%;
+      border-radius: 8px;
+      animation: fadeInUp 2s ease-out;
+    }
+
+    .contact-form h3 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #3498db;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .contact-form input[type="submit"] {
+      background-color: #3498db;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form input[type="submit"]:hover {
+      background-color: #2980b9;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #f39c12;
+      font-size: 16px;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+  
+    .contact-form input:focus,
+    .contact-form textarea:focus {
+      border-color: #3498db;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+ 
+  <section class="hero" id="home">
+    <h1>Welcome to Our Marketing Website</h1>
+    <p>We provide solutions that make a difference.</p>
+    <a href="page.html"><button class="cta-button">Get Started</button></a>
+  </section>
+
+ 
+  <section class="about" id="about">
+    <div>
+      <h2>Who We Are</h2>
+      <p>We are a passionate team dedicated to delivering top-notch services that help businesses thrive. Our focus is on quality, innovation, and customer satisfaction.</p>
+    </div>
+    <div>
+      <h2>Our Mission</h2>
+      <p>Our mission is to empower businesses by providing exceptional solutions tailored to their needs. We aim to create value for our clients through creative thinking and expertise.</p>
+    </div>
+  </section>
+
+ 
+  <section id="contact">
+    <div class="contact-form">
+      <h3>Contact Us</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea placeholder="Your Message" rows="5" required></textarea><br>
+        <input type="submit" value="Send Message">
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Your Website. All rights reserved. | <a href="#">Privacy Policy</a></p>
+  </footer>
+
+</body>
+</html>
